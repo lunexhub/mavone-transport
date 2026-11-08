@@ -1,12 +1,12 @@
 import { ArrowDown, ArrowRight, ArrowUpRight, Check, Compass, MapPin, ShieldCheck, Sparkles, Wifi } from "lucide-react";
 import { createFileRoute } from "@tanstack/react-router";
 
-import airportCar from "@/assets/mavone-airport-car.jpeg.asset.json";
-import companyCar from "@/assets/mavone-company-car.jpg.asset.json";
-import companyMinivan from "@/assets/mavone-company-minivan.jpg.asset.json";
-import founderPhoto from "@/assets/mavone-founder-safari.jpeg.asset.json";
-import travellerPhotoOne from "@/assets/mavone-traveller-1.jpeg.asset.json";
-import travellerPhotoTwo from "@/assets/mavone-traveller-2.jpeg.asset.json";
+import airportCar from "@/assets/mavone-airport-car.jpeg";
+import companyCar from "@/assets/mavone-company-car.jpg";
+import companyMinivan from "@/assets/mavone-company-minivan.jpg";
+import founderPhoto from "@/assets/mavone-founder-safari.jpeg";
+import travellerPhotoOne from "@/assets/mavone-traveller-1.jpeg";
+import travellerPhotoTwo from "@/assets/mavone-traveller-2.jpeg";
 import h1Image from "@/assets/hyundai-h1-shuttle.jpg";
 import coachImage from "@/assets/executive-coach.jpg";
 import { Button } from "@/components/ui/button";
@@ -48,7 +48,7 @@ function Index() {
 
   const vehicles = [
     {
-      image: companyCar.url,
+      image: companyCar,
       alt: "Mavone Tours branded private car at an airport pickup area",
       title: t("fleetCar"),
       detail: t("fleetCarDetail"),
@@ -56,7 +56,7 @@ function Index() {
       actual: true,
     },
     {
-      image: companyMinivan.url,
+      image: companyMinivan,
       alt: "Mavone Tours white passenger minivan outside a hotel",
       title: t("fleetMinibus"),
       detail: t("fleetMinibusDetail"),
@@ -93,7 +93,7 @@ function Index() {
       <section className="hero" aria-labelledby="hero-title">
         <img
           className="hero-image"
-          src={airportCar.url}
+          src={airportCar}
           alt="Mavone Tours car ready for an airport transfer"
           width={864}
           height={576}
@@ -194,13 +194,13 @@ function Index() {
       <section className="story-section section-wrap" id="story">
         <div className="story-photo-grid">
           <figure className="story-photo story-photo-main">
-            <img src={founderPhoto.url} alt="A Mavone Tours team member enjoying a South African wildlife experience" width={1368} height={2048} loading="lazy" />
+            <img src={founderPhoto} alt="A Mavone Tours team member enjoying a South African wildlife experience" width={1368} height={2048} loading="lazy" />
           </figure>
           <figure className="story-photo story-photo-small">
-            <img src={travellerPhotoOne.url} alt="A Mavone Tours driver and passenger sharing a friendly ride" width={1080} height={1080} loading="lazy" />
+            <img src={travellerPhotoOne} alt="A Mavone Tours driver and passenger sharing a friendly ride" width={1080} height={1080} loading="lazy" />
           </figure>
           <figure className="story-photo story-photo-small story-photo-last">
-            <img src={travellerPhotoTwo.url} alt="Passengers travelling together with their Mavone Tours driver" width={1080} height={1080} loading="lazy" />
+            <img src={travellerPhotoTwo} alt="Passengers travelling together with their Mavone Tours driver" width={1080} height={1080} loading="lazy" />
           </figure>
           <span className="story-photo-mark">{t("trusted")}</span>
         </div>
